@@ -1,0 +1,110 @@
+{
+ "@id": "https://github.com/peta-pico/fertility-data/KINDOUDERTAB.csv",
+ "@context": [
+  "https://raw.githubusercontent.com/CLARIAH/COW/master/csvw.json",
+  {
+   "@language": "en",
+   "@base": "http://purl.org/nanopub/temp/KINDOUDERTAB/"
+  },
+  {
+   "dct": "http://purl.org/dc/terms/",
+   "dcat": "http://www.w3.org/ns/dcat#",
+   "table": "http://purl.org/nanopub/temp/KINDOUDERTAB/table/",
+   "f": "https://github.com/peta-pico/fertility-data/vocab.ttl#"
+  }
+ ],
+ "url": "KINDOUDERTAB.csv",
+ "dialect": {
+  "delimiter": ",",
+  "encoding": "ascii",
+  "quoteChar": "\""
+ },
+ "dct:title": "KINDOUDERTAB.csv",
+ "dcat:keyword": [],
+ "dct:publisher": {
+  "schema:name": "CLARIAH Structured Data Hub - Datalegend",
+  "schema:url": {
+   "@id": "http://datalegend.net"
+  }
+ },
+ "dct:modified": {
+  "@value": "2021-03-09",
+  "@type": "xsd:date"
+ },
+ "tableSchema": {
+  "columns": [
+   {
+    "@id": "https://github.com/peta-pico/fertility-data/KINDOUDERTAB.csv/column/RINPERSOONS",
+    "name": "RINPERSOONS",
+    "titles": [
+     "RINPERSOONS"
+    ],
+    "dct:description": "RINPERSOONS",
+    "valueUrl": "https://github.com/peta-pico/fertility-data/vocab.ttl#Source{RINPERSOONS}", 
+    "propertyUrl": "f:has_RINPERSOONS"
+   },
+   {
+    "@id": "https://github.com/peta-pico/fertility-data/KINDOUDERTAB.csv/column/RINPERSOON",
+    "name": "RINPERSOON",
+    "titles": [
+     "RINPERSOON"
+    ],
+    "dct:description": "RINPERSOON",
+    "valueUrl": "https://github.com/peta-pico/fertility-data/vocab.ttl#Person{RINPERSOON}", 
+    "propertyUrl": "f:has_RINPERSOON"
+   },
+   {
+    "@id": "https://github.com/peta-pico/fertility-data/KINDOUDERTAB.csv/column/RINPERSOONSpa",
+    "name": "RINPERSOONSpa",
+    "titles": [
+     "RINPERSOONSpa"
+    ],
+    "dct:description": "RINPERSOONSpa",
+    "valueUrl": "https://github.com/peta-pico/fertility-data/vocab.ttl#Source{RINPERSOONSpa}", 
+    "propertyUrl": "f:has_RINPERSOONSpa"
+   },
+   {
+    "@id": "https://github.com/peta-pico/fertility-data/KINDOUDERTAB.csv/column/RINPERSOONpa",
+    "name": "RINPERSOONpa",
+    "titles": [
+     "RINPERSOONpa"
+    ],
+    "dct:description": "RINPERSOONpa",
+    "valueUrl": "https://github.com/peta-pico/fertility-data/vocab.ttl#Person{RINPERSOONpa}", 
+    "propertyUrl": "f:has_RINPERSOONpa"
+   },
+   {
+    "@id": "https://github.com/peta-pico/fertility-data/KINDOUDERTAB.csv/column/RINPERSOONSMa",
+    "name": "RINPERSOONSMa",
+    "titles": [
+     "RINPERSOONSMa"
+    ],
+    "dct:description": "RINPERSOONSMa",
+    "valueUrl": "https://github.com/peta-pico/fertility-data/vocab.ttl#Source{RINPERSOONSMa}", 
+    "propertyUrl": "f:has_RINPERSOONSMa"
+   },
+   {
+    "@id": "https://github.com/peta-pico/fertility-data/KINDOUDERTAB.csv/column/RINPERSOONMa",
+    "name": "RINPERSOONMa",
+    "titles": [
+     "RINPERSOONMa"
+    ],
+    "dct:description": "RINPERSOONMa",
+    "valueUrl": "https://github.com/peta-pico/fertility-data/vocab.ttl#Person{RINPERSOONMa}", 
+    "propertyUrl": "f:has_RINPERSOONMa"
+   },
+   {
+    "@id": "https://github.com/peta-pico/fertility-data/KINDOUDERTAB.csv/column/XKOPPELNUMMER",
+    "name": "XKOPPELNUMMER",
+    "titles": [
+     "XKOPPELNUMMER"
+    ],
+    "dct:description": "XKOPPELNUMMER",
+    "valueUrl": "https://github.com/peta-pico/fertility-data/vocab.ttl#couplingnumber{XKOPPELNUMMER}", 
+    "propertyUrl": "f:has_XKOPPELNUMMER"
+   }
+  ],
+  "primaryKey": "RINPERSOON",
+  "aboutUrl": "{_uuid}/entry"
+ }
+}

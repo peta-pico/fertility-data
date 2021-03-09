@@ -1,0 +1,162 @@
+@prefix this: <http://purl.org/np/RARc_wR51_9x9vDsF2NVYhfOOpgDMCtCK18dQAlNkgbd8> .
+@prefix sub: <http://purl.org/np/RARc_wR51_9x9vDsF2NVYhfOOpgDMCtCK18dQAlNkgbd8#> .
+@prefix f: <https://github.com/peta-pico/fertility-data/vocab.ttl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+
+sub:Head {
+  this: np:hasAssertion sub:assertion;
+    np:hasProvenance sub:provenance;
+    np:hasPublicationInfo sub:pubinfo;
+    a np:Nanopublication .
+}
+
+sub:assertion {
+  <http://purl.org/nanopub/temp/KINDOUDERTAB/__uuid_/entry> prov:wasDerivedFrom "http://purl.org/nanopub/temp/KINDOUDERTAB/{_uuid}/entry" .
+  
+  sub:_1 <http://schema.org/name> "CLARIAH Structured Data Hub - Datalegend"@en;
+    <http://schema.org/url> <http://datalegend.net/> .
+  
+  sub:_10 rdf:first <https://github.com/peta-pico/fertility-data/KINDOUDERTAB.csv/column/RINPERSOONSpa>;
+    rdf:rest sub:_4 .
+  
+  sub:_2 rdf:first <https://github.com/peta-pico/fertility-data/KINDOUDERTAB.csv/column/RINPERSOONSMa>;
+    rdf:rest sub:_3 .
+  
+  sub:_3 rdf:first <https://github.com/peta-pico/fertility-data/KINDOUDERTAB.csv/column/RINPERSOONMa>;
+    rdf:rest sub:_8 .
+  
+  sub:_4 rdf:first <https://github.com/peta-pico/fertility-data/KINDOUDERTAB.csv/column/RINPERSOONpa>;
+    rdf:rest sub:_2 .
+  
+  sub:_5 rdf:first <https://github.com/peta-pico/fertility-data/KINDOUDERTAB.csv/column/RINPERSOONS>;
+    rdf:rest sub:_6, rdf:nil .
+  
+  sub:_6 rdf:first <https://github.com/peta-pico/fertility-data/KINDOUDERTAB.csv/column/RINPERSOON>;
+    rdf:rest sub:_10 .
+  
+  sub:_7 <http://www.w3.org/ns/csvw#aboutUrl> <http://purl.org/nanopub/temp/KINDOUDERTAB/__uuid_/entry>;
+    <http://www.w3.org/ns/csvw#column> sub:_5;
+    <http://www.w3.org/ns/csvw#primaryKey> "RINPERSOON" .
+  
+  sub:_8 rdf:first <https://github.com/peta-pico/fertility-data/KINDOUDERTAB.csv/column/XKOPPELNUMMER>;
+    rdf:rest rdf:nil .
+  
+  sub:_9 <http://www.w3.org/ns/csvw#delimiter> ",";
+    <http://www.w3.org/ns/csvw#encoding> "ascii";
+    <http://www.w3.org/ns/csvw#quoteChar> "\"" .
+  
+  <https://github.com/peta-pico/fertility-data/KINDOUDERTAB.csv> dct:modified "2021-03-09"^^xsd:date;
+    dct:publisher sub:_1;
+    dct:title "KINDOUDERTAB.csv"@en;
+    <http://www.w3.org/ns/csvw#dialect> sub:_9;
+    <http://www.w3.org/ns/csvw#tableSchema> sub:_7;
+    <http://www.w3.org/ns/csvw#url> "KINDOUDERTAB.csv"^^xsd:anyURI .
+  
+  <https://github.com/peta-pico/fertility-data/KINDOUDERTAB.csv/column/RINPERSOON> dct:description
+      "RINPERSOON"@en;
+    <http://www.w3.org/ns/csvw#name> "RINPERSOON";
+    <http://www.w3.org/ns/csvw#propertyUrl> f:has_RINPERSOON;
+    <http://www.w3.org/ns/csvw#title> "RINPERSOON"@en;
+    <http://www.w3.org/ns/csvw#valueUrl> f:Person_RINPERSOON_ .
+  
+  <https://github.com/peta-pico/fertility-data/KINDOUDERTAB.csv/column/RINPERSOONMa>
+    dct:description "RINPERSOONMa"@en;
+    <http://www.w3.org/ns/csvw#name> "RINPERSOONMa";
+    <http://www.w3.org/ns/csvw#propertyUrl> f:has_RINPERSOONMa;
+    <http://www.w3.org/ns/csvw#title> "RINPERSOONMa"@en;
+    <http://www.w3.org/ns/csvw#valueUrl> f:Person_RINPERSOONMa_ .
+  
+  <https://github.com/peta-pico/fertility-data/KINDOUDERTAB.csv/column/RINPERSOONS>
+    dct:description "RINPERSOONS"@en;
+    <http://www.w3.org/ns/csvw#name> "RINPERSOONS";
+    <http://www.w3.org/ns/csvw#propertyUrl> f:has_RINPERSOONS;
+    <http://www.w3.org/ns/csvw#title> "RINPERSOONS"@en;
+    <http://www.w3.org/ns/csvw#valueUrl> f:Source_RINPERSOONS_ .
+  
+  <https://github.com/peta-pico/fertility-data/KINDOUDERTAB.csv/column/RINPERSOONSMa>
+    dct:description "RINPERSOONSMa"@en;
+    <http://www.w3.org/ns/csvw#name> "RINPERSOONSMa";
+    <http://www.w3.org/ns/csvw#propertyUrl> f:has_RINPERSOONSMa;
+    <http://www.w3.org/ns/csvw#title> "RINPERSOONSMa"@en;
+    <http://www.w3.org/ns/csvw#valueUrl> f:Source_RINPERSOONSMa_ .
+  
+  <https://github.com/peta-pico/fertility-data/KINDOUDERTAB.csv/column/RINPERSOONSpa>
+    dct:description "RINPERSOONSpa"@en;
+    <http://www.w3.org/ns/csvw#name> "RINPERSOONSpa";
+    <http://www.w3.org/ns/csvw#propertyUrl> f:has_RINPERSOONSpa;
+    <http://www.w3.org/ns/csvw#title> "RINPERSOONSpa"@en;
+    <http://www.w3.org/ns/csvw#valueUrl> f:Source_RINPERSOONSpa_ .
+  
+  <https://github.com/peta-pico/fertility-data/KINDOUDERTAB.csv/column/RINPERSOONpa>
+    dct:description "RINPERSOONpa"@en;
+    <http://www.w3.org/ns/csvw#name> "RINPERSOONpa";
+    <http://www.w3.org/ns/csvw#propertyUrl> f:has_RINPERSOONpa;
+    <http://www.w3.org/ns/csvw#title> "RINPERSOONpa"@en;
+    <http://www.w3.org/ns/csvw#valueUrl> f:Person_RINPERSOONpa_ .
+  
+  <https://github.com/peta-pico/fertility-data/KINDOUDERTAB.csv/column/XKOPPELNUMMER>
+    dct:description "XKOPPELNUMMER"@en;
+    <http://www.w3.org/ns/csvw#name> "XKOPPELNUMMER";
+    <http://www.w3.org/ns/csvw#propertyUrl> f:has_XKOPPELNUMMER;
+    <http://www.w3.org/ns/csvw#title> "XKOPPELNUMMER"@en;
+    <http://www.w3.org/ns/csvw#valueUrl> f:couplingnumber_XKOPPELNUMMER_ .
+  
+  f:Person_RINPERSOONMa_ prov:wasDerivedFrom "https://github.com/peta-pico/fertility-data/vocab.ttl#Person{RINPERSOONMa}" .
+  
+  f:Person_RINPERSOON_ prov:wasDerivedFrom "https://github.com/peta-pico/fertility-data/vocab.ttl#Person{RINPERSOON}" .
+  
+  f:Person_RINPERSOONpa_ prov:wasDerivedFrom "https://github.com/peta-pico/fertility-data/vocab.ttl#Person{RINPERSOONpa}" .
+  
+  f:Source_RINPERSOONSMa_ prov:wasDerivedFrom "https://github.com/peta-pico/fertility-data/vocab.ttl#Source{RINPERSOONSMa}" .
+  
+  f:Source_RINPERSOONS_ prov:wasDerivedFrom "https://github.com/peta-pico/fertility-data/vocab.ttl#Source{RINPERSOONS}" .
+  
+  f:Source_RINPERSOONSpa_ prov:wasDerivedFrom "https://github.com/peta-pico/fertility-data/vocab.ttl#Source{RINPERSOONSpa}" .
+  
+  f:couplingnumber_XKOPPELNUMMER_ prov:wasDerivedFrom "https://github.com/peta-pico/fertility-data/vocab.ttl#couplingnumber{XKOPPELNUMMER}" .
+}
+
+sub:provenance {
+  sub:assertion prov:wasDerivedFrom <https://github.com/peta-pico/fertility-data/KINDOUDERTAB.csv> .
+}
+
+sub:pubinfo {
+  this: prov:generatedAtTime "2021-03-09T16:00:00"^^xsd:dateTime;
+    prov:wasGeneratedBy <https://github.com/CLARIAH/COW> .
+}
+@prefix this: <http://purl.org/np/RAqNqECKYqz8CdsgSKhPSMnEJTExxxsDx791CFUOsM3Lo> .
+@prefix sub: <http://purl.org/np/RAqNqECKYqz8CdsgSKhPSMnEJTExxxsDx791CFUOsM3Lo#> .
+@prefix f: <https://github.com/peta-pico/fertility-data/vocab.ttl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+
+sub:Head {
+  this: np:hasAssertion sub:assertion;
+    np:hasProvenance sub:provenance;
+    np:hasPublicationInfo sub:pubinfo;
+    a np:Nanopublication .
+}
+
+sub:assertion {
+  sub:entry f:has_RINPERSOON f:Person1001;
+    f:has_RINPERSOONMa f:Person1003;
+    f:has_RINPERSOONS f:SourceR;
+    f:has_RINPERSOONSMa f:SourceR;
+    f:has_RINPERSOONSpa f:SourceR;
+    f:has_RINPERSOONpa f:Person1002;
+    f:has_XKOPPELNUMMER f:couplingnumber0 .
+}
+
+sub:provenance {
+  sub:assertion prov:wasDerivedFrom <https://github.com/peta-pico/fertility-data/KINDOUDERTAB.csv> .
+}
+
+sub:pubinfo {
+  this: prov:generatedAtTime "2021-03-09T15:59:00"^^xsd:dateTime;
+    prov:wasGeneratedBy <https://github.com/CLARIAH/COW> .
+}
