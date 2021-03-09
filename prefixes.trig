@@ -1,1 +1,2 @@
 @prefix f: <https://github.com/peta-pico/fertility-data/vocab.ttl#> .
+@prefix column: <https://github.com/peta-pico/fertility-data/KINDOUDERTAB.csv/column/> .

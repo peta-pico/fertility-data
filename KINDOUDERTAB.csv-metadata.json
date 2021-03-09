@@ -10,7 +10,8 @@
    "dct": "http://purl.org/dc/terms/",
    "dcat": "http://www.w3.org/ns/dcat#",
    "table": "http://purl.org/nanopub/temp/KINDOUDERTAB/table/",
-   "f": "https://github.com/peta-pico/fertility-data/vocab.ttl#"
+   "f": "https://github.com/peta-pico/fertility-data/vocab.ttl#",
+   "column": "https://github.com/peta-pico/fertility-data/KINDOUDERTAB.csv/column/"
   }
  ],
  "url": "KINDOUDERTAB.csv",
